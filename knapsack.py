@@ -12,11 +12,11 @@ def maxValue(capacityW, weights, values):
             '''
             Please fill in your answer to replace the "?" in the code block
             '''
-            answer += ?
-            capacityW = ?
+            answer += v # Add item value
+            capacityW -= w # Subtract item weight
         else:
-            answer += ?
-            capacityW = ?
+            answer += v * (capacityW)/w # Take fraction of item value
+            capacityW = 0 # Knapsack is full
     return answer
 
 
